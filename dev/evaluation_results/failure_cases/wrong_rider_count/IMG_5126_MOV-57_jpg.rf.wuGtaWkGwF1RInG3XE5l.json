@@ -1,0 +1,60 @@
+{
+  "image": "IMG_5126_MOV-57_jpg.rf.wuGtaWkGwF1RInG3XE5l.jpg",
+  "failure_type": "wrong_rider_count",
+  "ground_truth": {
+    "violations": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": ""
+      },
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": ""
+      }
+    ]
+  },
+  "prediction": {
+    "violations": [
+      {
+        "num_riders": 2,
+        "helmet_violations": 1,
+        "license_plate": ""
+      }
+    ]
+  },
+  "analysis": {
+    "gt_count": 2,
+    "pred_count": 1,
+    "matched": [
+      {
+        "gt": {
+          "num_riders": 1,
+          "helmet_violations": 1,
+          "license_plate": ""
+        },
+        "pred": {
+          "num_riders": 2,
+          "helmet_violations": 1,
+          "license_plate": ""
+        },
+        "rider_correct": false,
+        "helmet_correct": true,
+        "ocr_score": 1.0
+      }
+    ],
+    "missed_gt": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": ""
+      }
+    ],
+    "false_pos": [],
+    "failure_types": [
+      "missed_violation",
+      "wrong_rider_count"
+    ]
+  }
+}

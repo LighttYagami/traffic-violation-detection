@@ -1,0 +1,32 @@
+{
+  "image": "IMG_5076_MOV-18_jpg.rf.C0YiStTX0yuLAYl4cum6.jpg",
+  "failure_type": "missed_violation",
+  "ground_truth": {
+    "violations": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": ""
+      }
+    ]
+  },
+  "prediction": {
+    "violations": []
+  },
+  "analysis": {
+    "gt_count": 1,
+    "pred_count": 0,
+    "matched": [],
+    "missed_gt": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": ""
+      }
+    ],
+    "false_pos": [],
+    "failure_types": [
+      "missed_violation"
+    ]
+  }
+}

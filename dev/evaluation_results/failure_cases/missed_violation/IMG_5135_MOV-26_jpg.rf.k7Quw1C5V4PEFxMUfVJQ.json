@@ -1,0 +1,32 @@
+{
+  "image": "IMG_5135_MOV-26_jpg.rf.k7Quw1C5V4PEFxMUfVJQ.jpg",
+  "failure_type": "missed_violation",
+  "ground_truth": {
+    "violations": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": "22-B1 635.30"
+      }
+    ]
+  },
+  "prediction": {
+    "violations": []
+  },
+  "analysis": {
+    "gt_count": 1,
+    "pred_count": 0,
+    "matched": [],
+    "missed_gt": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": "22-B1 635.30"
+      }
+    ],
+    "false_pos": [],
+    "failure_types": [
+      "missed_violation"
+    ]
+  }
+}

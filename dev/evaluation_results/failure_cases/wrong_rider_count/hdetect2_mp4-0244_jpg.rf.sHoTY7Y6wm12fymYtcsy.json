@@ -1,0 +1,61 @@
+{
+  "image": "hdetect2_mp4-0244_jpg.rf.sHoTY7Y6wm12fymYtcsy.jpg",
+  "failure_type": "wrong_rider_count",
+  "ground_truth": {
+    "violations": [
+      {
+        "num_riders": 2,
+        "helmet_violations": 1,
+        "license_plate": "MH 01 CB 4565"
+      }
+    ]
+  },
+  "prediction": {
+    "violations": [
+      {
+        "num_riders": 3,
+        "helmet_violations": 1,
+        "license_plate": ""
+      },
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": "HH9I COS"
+      }
+    ]
+  },
+  "analysis": {
+    "gt_count": 1,
+    "pred_count": 2,
+    "matched": [
+      {
+        "gt": {
+          "num_riders": 2,
+          "helmet_violations": 1,
+          "license_plate": "MH 01 CB 4565"
+        },
+        "pred": {
+          "num_riders": 3,
+          "helmet_violations": 1,
+          "license_plate": ""
+        },
+        "rider_correct": false,
+        "helmet_correct": true,
+        "ocr_score": 0.0
+      }
+    ],
+    "missed_gt": [],
+    "false_pos": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": "HH9I COS"
+      }
+    ],
+    "failure_types": [
+      "false_positive",
+      "ocr_failure",
+      "wrong_rider_count"
+    ]
+  }
+}

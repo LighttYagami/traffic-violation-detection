@@ -1,0 +1,55 @@
+# ─── Experiment ───
+experiment_name: "exp_001_yolo26s_full_finetune"
+description: "YOLO26s fine-tuned on Bike Helmet Detection dataset, full param update, imgsz=1280"
+
+# ─── Model ───
+model:
+  architecture: "yolo26s.pt" #"yolo26l.pt"
+  input_size: 1280
+
+# ─── Dataset ───
+data:
+  yaml_path: "../data/data.yaml"
+
+# ─── Training ───
+training:
+  epochs: 50
+  batch_size: 32
+  patience: 10
+  amp: true  # Automatic mixed precision, float16 for most computations, float32 where precision matters, ~2x faster training
+  freeze_layers: 0
+  optimizer: "auto"
+  learning_rate:
+    initial: 0.01
+    final_factor: 0.01
+    warmup_epochs: 3
+    warmup_momentum: 0.8
+    warmup_bias_lr: 0.1
+  momentum: 0.937
+  weight_decay: 0.0005
+
+# ─── Augmentation ───
+augmentation:
+  hsv_h: 0.015 # shifts the hue (color tone) by up to ±1.5%.
+  hsv_s: 0.7 # shifts saturation (color intensity) by up to ±70%
+  hsv_v: 0.4 # shifts value/brightness by up to ±40%.
+  degrees: 0.0 # no rotation
+  translate: 0.1 # shifts the image horizontally/vertically by up to 10% of image size
+  scale: 0.3 # 0.5 # zooms in/out by up to ±50%
+  shear: 0.0
+  perspective: 0.0
+  flipud: 0.0
+  fliplr: 0.5
+  mosaic: 1.0  # Takes 4 random training images, stitches them into one 2×2 grid, and trains on that combined image. 
+  mixup: 0.0
+  copy_paste: 0.0
+
+# ─── Checkpointing ───
+checkpointing:
+  save_period: 10
+
+# ─── Logging ───
+logging:
+  log_gradients: true
+  log_weight_norms: true
+  log_per_class_metrics: true

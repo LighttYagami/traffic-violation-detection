@@ -1,0 +1,96 @@
+{
+  "image": "BikesHelmets304_png_jpg.rf.MbF7TktccNjzWjeQRs9m.jpg",
+  "failure_type": "missed_violation",
+  "ground_truth": {
+    "violations": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": ""
+      },
+      {
+        "num_riders": 2,
+        "helmet_violations": 2,
+        "license_plate": ""
+      },
+      {
+        "num_riders": 2,
+        "helmet_violations": 2,
+        "license_plate": ""
+      },
+      {
+        "num_riders": 2,
+        "helmet_violations": 2,
+        "license_plate": ""
+      }
+    ]
+  },
+  "prediction": {
+    "violations": [
+      {
+        "num_riders": 2,
+        "helmet_violations": 2,
+        "license_plate": ""
+      },
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": ""
+      }
+    ]
+  },
+  "analysis": {
+    "gt_count": 4,
+    "pred_count": 2,
+    "matched": [
+      {
+        "gt": {
+          "num_riders": 1,
+          "helmet_violations": 1,
+          "license_plate": ""
+        },
+        "pred": {
+          "num_riders": 2,
+          "helmet_violations": 2,
+          "license_plate": ""
+        },
+        "rider_correct": false,
+        "helmet_correct": false,
+        "ocr_score": 1.0
+      },
+      {
+        "gt": {
+          "num_riders": 2,
+          "helmet_violations": 2,
+          "license_plate": ""
+        },
+        "pred": {
+          "num_riders": 1,
+          "helmet_violations": 1,
+          "license_plate": ""
+        },
+        "rider_correct": false,
+        "helmet_correct": false,
+        "ocr_score": 1.0
+      }
+    ],
+    "missed_gt": [
+      {
+        "num_riders": 2,
+        "helmet_violations": 2,
+        "license_plate": ""
+      },
+      {
+        "num_riders": 2,
+        "helmet_violations": 2,
+        "license_plate": ""
+      }
+    ],
+    "false_pos": [],
+    "failure_types": [
+      "wrong_helmet_count",
+      "wrong_rider_count",
+      "missed_violation"
+    ]
+  }
+}

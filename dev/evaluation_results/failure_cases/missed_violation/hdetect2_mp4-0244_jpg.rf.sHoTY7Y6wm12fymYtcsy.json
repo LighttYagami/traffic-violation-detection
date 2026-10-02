@@ -1,0 +1,32 @@
+{
+  "image": "hdetect2_mp4-0244_jpg.rf.sHoTY7Y6wm12fymYtcsy.jpg",
+  "failure_type": "missed_violation",
+  "ground_truth": {
+    "violations": [
+      {
+        "num_riders": 2,
+        "helmet_violations": 1,
+        "license_plate": "MH 01 CB 4565"
+      }
+    ]
+  },
+  "prediction": {
+    "violations": []
+  },
+  "analysis": {
+    "gt_count": 1,
+    "pred_count": 0,
+    "matched": [],
+    "missed_gt": [
+      {
+        "num_riders": 2,
+        "helmet_violations": 1,
+        "license_plate": "MH 01 CB 4565"
+      }
+    ],
+    "false_pos": [],
+    "failure_types": [
+      "missed_violation"
+    ]
+  }
+}

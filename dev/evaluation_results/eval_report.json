@@ -1,0 +1,44 @@
+{
+  "metrics": {
+    "total_gt_violations": 29,
+    "total_pred_violations": 20,
+    "detected_violations": 17,
+    "false_positives": 3,
+    "violation_detection_rate": 0.5862068965517241,
+    "false_positive_rate": 0.15,
+    "rider_count_accuracy": 0.41379310344827586,
+    "rider_count_mae": 0.35294117647058826,
+    "helmet_count_accuracy": 0.5172413793103449,
+    "helmet_count_mae": 0.17647058823529413,
+    "ocr_exact_match": 0.3103448275862069,
+    "ocr_edit_distance_avg": 0.6360482654600302,
+    "violation_score": 0.4655172413793104,
+    "ocr_score": 0.6360482654600302,
+    "final_score": 0.5507827534196703
+  },
+  "timing": {
+    "mean_seconds": 0.1561013986898023,
+    "median_seconds": 0.08973526954650879,
+    "max_seconds": 1.0606327056884766,
+    "p95_seconds": 0.29293041229248035,
+    "over_5s_count": 0,
+    "init_time_seconds": 21.200035572052002
+  },
+  "failure_counts": {
+    "missed_violation": 10,
+    "false_positive": 3,
+    "wrong_rider_count": 5,
+    "wrong_helmet_count": 2,
+    "ocr_failure": 7
+  },
+  "failure_patterns": {
+    "missed_violation": 9,
+    "ocr_failure": 4,
+    "wrong_helmet_count + wrong_rider_count": 2,
+    "false_positive": 1,
+    "missed_violation + wrong_rider_count": 1,
+    "false_positive + ocr_failure": 1,
+    "false_positive + ocr_failure + wrong_rider_count": 1,
+    "ocr_failure + wrong_rider_count": 1
+  }
+}

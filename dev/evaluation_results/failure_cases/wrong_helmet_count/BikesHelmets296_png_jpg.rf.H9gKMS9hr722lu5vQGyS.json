@@ -1,0 +1,49 @@
+{
+  "image": "BikesHelmets296_png_jpg.rf.H9gKMS9hr722lu5vQGyS.jpg",
+  "failure_type": "wrong_helmet_count",
+  "ground_truth": {
+    "violations": [
+      {
+        "num_riders": 3,
+        "helmet_violations": 3,
+        "license_plate": ""
+      }
+    ]
+  },
+  "prediction": {
+    "violations": [
+      {
+        "num_riders": 5,
+        "helmet_violations": 5,
+        "license_plate": ""
+      }
+    ]
+  },
+  "analysis": {
+    "gt_count": 1,
+    "pred_count": 1,
+    "matched": [
+      {
+        "gt": {
+          "num_riders": 3,
+          "helmet_violations": 3,
+          "license_plate": ""
+        },
+        "pred": {
+          "num_riders": 5,
+          "helmet_violations": 5,
+          "license_plate": ""
+        },
+        "rider_correct": false,
+        "helmet_correct": false,
+        "ocr_score": 1.0
+      }
+    ],
+    "missed_gt": [],
+    "false_pos": [],
+    "failure_types": [
+      "wrong_rider_count",
+      "wrong_helmet_count"
+    ]
+  }
+}

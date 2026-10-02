@@ -1,0 +1,60 @@
+{
+  "image": "testing_images_52_jpg.rf.gi20OsngZRfEO8W5wBQA.jpg",
+  "failure_type": "ocr_failure",
+  "ground_truth": {
+    "violations": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": "DD 4988 V"
+      }
+    ]
+  },
+  "prediction": {
+    "violations": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": ""
+      },
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": ""
+      }
+    ]
+  },
+  "analysis": {
+    "gt_count": 1,
+    "pred_count": 2,
+    "matched": [
+      {
+        "gt": {
+          "num_riders": 1,
+          "helmet_violations": 1,
+          "license_plate": "DD 4988 V"
+        },
+        "pred": {
+          "num_riders": 1,
+          "helmet_violations": 1,
+          "license_plate": ""
+        },
+        "rider_correct": true,
+        "helmet_correct": true,
+        "ocr_score": 0.0
+      }
+    ],
+    "missed_gt": [],
+    "false_pos": [
+      {
+        "num_riders": 1,
+        "helmet_violations": 1,
+        "license_plate": ""
+      }
+    ],
+    "failure_types": [
+      "false_positive",
+      "ocr_failure"
+    ]
+  }
+}

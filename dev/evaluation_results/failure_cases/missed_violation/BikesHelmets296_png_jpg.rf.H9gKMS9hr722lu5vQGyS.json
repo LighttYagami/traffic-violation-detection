@@ -1,0 +1,32 @@
+{
+  "image": "BikesHelmets296_png_jpg.rf.H9gKMS9hr722lu5vQGyS.jpg",
+  "failure_type": "missed_violation",
+  "ground_truth": {
+    "violations": [
+      {
+        "num_riders": 3,
+        "helmet_violations": 3,
+        "license_plate": ""
+      }
+    ]
+  },
+  "prediction": {
+    "violations": []
+  },
+  "analysis": {
+    "gt_count": 1,
+    "pred_count": 0,
+    "matched": [],
+    "missed_gt": [
+      {
+        "num_riders": 3,
+        "helmet_violations": 3,
+        "license_plate": ""
+      }
+    ],
+    "false_pos": [],
+    "failure_types": [
+      "missed_violation"
+    ]
+  }
+}
